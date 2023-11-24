@@ -5,7 +5,7 @@ def get_numbers_list():
     numbers_list = []
     
     try:
-     count = int(input("Count of numbers: "))
+     count = int(input("Amount of numbers: "))
 
     except ValueError:
         print("Die Eingabe war nicht gültig.")
@@ -13,7 +13,7 @@ def get_numbers_list():
 
     for i in range(count):
         try:
-            numbers = int(input("number: "))
+            numbers = float(input("number: "))
 
         except ValueError:
             print("Die Eingabe war nicht gültig.")
