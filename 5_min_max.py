@@ -5,11 +5,11 @@ def get_numbers_list():
     numbers_list = []
     
     try:
-     count = int(input("Amount of numbers: "))
+        count = int(input("Amount of numbers: "))
 
     except ValueError:
         print("Die Eingabe war nicht gültig.")
-        return []
+        return 
 
     for i in range(count):
         try:
@@ -17,7 +17,7 @@ def get_numbers_list():
 
         except ValueError:
             print("Die Eingabe war nicht gültig.")
-            return []
+            return 
         numbers_list.append(numbers)
     
     return numbers_list
